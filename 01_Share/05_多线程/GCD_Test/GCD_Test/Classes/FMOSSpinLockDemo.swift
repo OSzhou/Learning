@@ -10,6 +10,7 @@ import UIKit
 import libkern
 
 class FMOSSpinLockDemo: FMBaseDemo {
+    
     let moneyLock = UnsafeMutablePointer<OSSpinLock>.allocate(capacity: 0)
     let ticketLock = UnsafeMutablePointer<OSSpinLock>.allocate(capacity: 0)
     
