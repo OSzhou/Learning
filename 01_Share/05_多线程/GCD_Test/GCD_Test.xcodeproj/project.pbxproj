@@ -16,11 +16,16 @@
 		9722C8BD24DAB5F500562F40 /* FMQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8BC24DAB5F500562F40 /* FMQuestionsViewController.swift */; };
 		9722C8BF24DAC3F300562F40 /* FMPrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8BE24DAC3F300562F40 /* FMPrintViewController.swift */; };
 		9722C8C124DBEE0400562F40 /* FMGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8C024DBEE0400562F40 /* FMGroupViewController.swift */; };
-		9722C8C324DBFE3E00562F40 /* FMBaseDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8C224DBFE3E00562F40 /* FMBaseDemo.swift */; };
-		9722C8C524DC043A00562F40 /* FMOSSpinLockDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8C424DC043A00562F40 /* FMOSSpinLockDemo.swift */; };
-		9722C8C724DC093400562F40 /* FMLockDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8C624DC093400562F40 /* FMLockDemo.swift */; };
 		9722C8C924DC0B9D00562F40 /* FMBarrierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8C824DC0B9D00562F40 /* FMBarrierViewController.swift */; };
-		9722C8CB24DD02F100562F40 /* FMSemaphoreDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8CA24DD02F100562F40 /* FMSemaphoreDemo.swift */; };
+		9722C8D124DD2A0000562F40 /* FMSemaphoreDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8CD24DD2A0000562F40 /* FMSemaphoreDemo.swift */; };
+		9722C8D224DD2A0000562F40 /* FMOSSpinLockDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8CE24DD2A0000562F40 /* FMOSSpinLockDemo.swift */; };
+		9722C8D324DD2A0000562F40 /* FMLockDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8CF24DD2A0000562F40 /* FMLockDemo.swift */; };
+		9722C8D424DD2A0000562F40 /* FMBaseDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8D024DD2A0000562F40 /* FMBaseDemo.swift */; };
+		9722C8D624DD356200562F40 /* FMOSUnfairLockDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8D524DD356200562F40 /* FMOSUnfairLockDemo.swift */; };
+		9722C8D824DD4CE000562F40 /* FMMutexDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8D724DD4CE000562F40 /* FMMutexDemo.swift */; };
+		9722C8DA24DD6D9900562F40 /* FMSerialQueueDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8D924DD6D9900562F40 /* FMSerialQueueDemo.swift */; };
+		9722C8DC24DD6E8E00562F40 /* FMSynchronizeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8DB24DD6E8E00562F40 /* FMSynchronizeDemo.swift */; };
+		9722C8DE24DD711B00562F40 /* FMConditionLockDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8DD24DD711B00562F40 /* FMConditionLockDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +61,16 @@
 		9722C8BC24DAB5F500562F40 /* FMQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMQuestionsViewController.swift; sourceTree = "<group>"; };
 		9722C8BE24DAC3F300562F40 /* FMPrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPrintViewController.swift; sourceTree = "<group>"; };
 		9722C8C024DBEE0400562F40 /* FMGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMGroupViewController.swift; sourceTree = "<group>"; };
-		9722C8C224DBFE3E00562F40 /* FMBaseDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMBaseDemo.swift; sourceTree = "<group>"; };
-		9722C8C424DC043A00562F40 /* FMOSSpinLockDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMOSSpinLockDemo.swift; sourceTree = "<group>"; };
-		9722C8C624DC093400562F40 /* FMLockDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMLockDemo.swift; sourceTree = "<group>"; };
 		9722C8C824DC0B9D00562F40 /* FMBarrierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMBarrierViewController.swift; sourceTree = "<group>"; };
-		9722C8CA24DD02F100562F40 /* FMSemaphoreDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSemaphoreDemo.swift; sourceTree = "<group>"; };
+		9722C8CD24DD2A0000562F40 /* FMSemaphoreDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMSemaphoreDemo.swift; sourceTree = "<group>"; };
+		9722C8CE24DD2A0000562F40 /* FMOSSpinLockDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMOSSpinLockDemo.swift; sourceTree = "<group>"; };
+		9722C8CF24DD2A0000562F40 /* FMLockDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMLockDemo.swift; sourceTree = "<group>"; };
+		9722C8D024DD2A0000562F40 /* FMBaseDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMBaseDemo.swift; sourceTree = "<group>"; };
+		9722C8D524DD356200562F40 /* FMOSUnfairLockDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMOSUnfairLockDemo.swift; sourceTree = "<group>"; };
+		9722C8D724DD4CE000562F40 /* FMMutexDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMutexDemo.swift; sourceTree = "<group>"; };
+		9722C8D924DD6D9900562F40 /* FMSerialQueueDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSerialQueueDemo.swift; sourceTree = "<group>"; };
+		9722C8DB24DD6E8E00562F40 /* FMSynchronizeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSynchronizeDemo.swift; sourceTree = "<group>"; };
+		9722C8DD24DD711B00562F40 /* FMConditionLockDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMConditionLockDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,17 +151,30 @@
 		9722C8B924DAAEB300562F40 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9722C8CC24DD2A0000562F40 /* LockDemo */,
 				9722C8BA24DAAED000562F40 /* FMRootViewController.swift */,
 				9722C8BC24DAB5F500562F40 /* FMQuestionsViewController.swift */,
 				9722C8BE24DAC3F300562F40 /* FMPrintViewController.swift */,
 				9722C8C024DBEE0400562F40 /* FMGroupViewController.swift */,
-				9722C8C224DBFE3E00562F40 /* FMBaseDemo.swift */,
-				9722C8C424DC043A00562F40 /* FMOSSpinLockDemo.swift */,
-				9722C8C624DC093400562F40 /* FMLockDemo.swift */,
 				9722C8C824DC0B9D00562F40 /* FMBarrierViewController.swift */,
-				9722C8CA24DD02F100562F40 /* FMSemaphoreDemo.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		9722C8CC24DD2A0000562F40 /* LockDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9722C8D024DD2A0000562F40 /* FMBaseDemo.swift */,
+				9722C8CD24DD2A0000562F40 /* FMSemaphoreDemo.swift */,
+				9722C8CE24DD2A0000562F40 /* FMOSSpinLockDemo.swift */,
+				9722C8CF24DD2A0000562F40 /* FMLockDemo.swift */,
+				9722C8D524DD356200562F40 /* FMOSUnfairLockDemo.swift */,
+				9722C8D724DD4CE000562F40 /* FMMutexDemo.swift */,
+				9722C8D924DD6D9900562F40 /* FMSerialQueueDemo.swift */,
+				9722C8DB24DD6E8E00562F40 /* FMSynchronizeDemo.swift */,
+				9722C8DD24DD711B00562F40 /* FMConditionLockDemo.swift */,
+			);
+			path = LockDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,15 +307,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9722C8CB24DD02F100562F40 /* FMSemaphoreDemo.swift in Sources */,
-				9722C8C524DC043A00562F40 /* FMOSSpinLockDemo.swift in Sources */,
+				9722C8D324DD2A0000562F40 /* FMLockDemo.swift in Sources */,
+				9722C8D224DD2A0000562F40 /* FMOSSpinLockDemo.swift in Sources */,
+				9722C8DC24DD6E8E00562F40 /* FMSynchronizeDemo.swift in Sources */,
+				9722C8D624DD356200562F40 /* FMOSUnfairLockDemo.swift in Sources */,
+				9722C8DA24DD6D9900562F40 /* FMSerialQueueDemo.swift in Sources */,
+				9722C8D824DD4CE000562F40 /* FMMutexDemo.swift in Sources */,
+				9722C8D124DD2A0000562F40 /* FMSemaphoreDemo.swift in Sources */,
 				9722C8C924DC0B9D00562F40 /* FMBarrierViewController.swift in Sources */,
-				9722C8C324DBFE3E00562F40 /* FMBaseDemo.swift in Sources */,
 				9722C88A24DAAE4800562F40 /* AppDelegate.swift in Sources */,
+				9722C8D424DD2A0000562F40 /* FMBaseDemo.swift in Sources */,
 				9722C8BF24DAC3F300562F40 /* FMPrintViewController.swift in Sources */,
-				9722C8C724DC093400562F40 /* FMLockDemo.swift in Sources */,
 				9722C8BD24DAB5F500562F40 /* FMQuestionsViewController.swift in Sources */,
 				9722C8C124DBEE0400562F40 /* FMGroupViewController.swift in Sources */,
+				9722C8DE24DD711B00562F40 /* FMConditionLockDemo.swift in Sources */,
 				9722C8BB24DAAED000562F40 /* FMRootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

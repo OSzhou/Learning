@@ -10,8 +10,14 @@ import UIKit
 
 class FMGroupViewController: UIViewController {
 
+    var baseDemo = FMBaseDemo()
     var lockDemo = FMLockDemo()
     var semaphoreDemo = FMSemaphoreDemo()
+    var unfairLockDemo = FMOSUnfairLockDemo()
+    var mutexDemo = FMMutexDemo()
+    var serialDemo = FMSerialQueueDemo()
+    var synchronizeDemo = FMSynchronizeDemo()
+    var conditionDemo = FMConditionLockDemo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +30,17 @@ class FMGroupViewController: UIViewController {
         
 //        lockDemo.moneyTest()
 //        semaphoreDemo.otherTest()
-        semaphoreDemo.moneyTest()
+//        semaphoreDemo.moneyTest()
+//        unfairLockDemo.moneyTest()
+        
+//        mutexDemo.moneyTest()
+//        mutexDemo.otherTest()
+        
+//        serialDemo.moneyTest()
+        
+        synchronizeDemo.moneyTest()
+        
+        conditionDemo.otherTest()
         
         return
         
