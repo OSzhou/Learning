@@ -1,0 +1,27 @@
+ 1 : 1
+ 2 : 1
+ 3 : 1
+ 4 : 1 	          	         				 - 1  
+ 5 : 1 					   		- 1 		 - 1 
+ 6 : 1			  	 - 1 		- 1 		 - 1 				
+ 7 : 1		   - 1	 - 1 		- 1 		 - 1 - 1			
+ 8 : 1	   - 1 - 1	 - 1 		- 1 - 1  	 - 1 - 1 - 1 	
+ 9 : 1 - 1 - 1 - 1	 - 1 - 1	- 1 - 1 - 1  - 1 - 1 - 1 - 1
+ 
+ n: months
+ int sum = 0;
+ function recursive (int : n) {
+ 	// not full 3 months， have no child.
+ 	if ( n <= 3) { 
+ 		return 1; 
+ 	} else {
+ 	 	return n - 3 + 1;
+ 	}
+ }
+
+ function sumFunc (int : n) {
+ 	sum += recursive (n);
+ 	if (n > 1) {
+ 		sumFunc (n - 1);
+ 	}
+ }

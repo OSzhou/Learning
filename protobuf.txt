@@ -1,0 +1,1 @@
+sublime 查看proto文件的插件：protocol buffer syntax
