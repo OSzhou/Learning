@@ -21,13 +21,13 @@ class FMConditionLockDemo: FMBaseDemo {
     @objc func __one() {
         conditionLock.lock()
         
-        print(" --- __one ---")
+        print(" --- one ---")
         Thread.sleep(forTimeInterval: 2)
         conditionLock.unlock(withCondition: 2)
     }
     
     @objc func __two() {
-        conditionLock.lock()
+        conditionLock.lock(whenCondition: 2)
         
         print(" --- two ---")
         Thread.sleep(forTimeInterval: 2)
@@ -35,7 +35,7 @@ class FMConditionLockDemo: FMBaseDemo {
     }
     
     @objc func __three() {
-        conditionLock.lock()
+        conditionLock.lock(whenCondition: 3)
 //        Thread.sleep(forTimeInterval: 3)
         print(" --- three ---")
         

@@ -38,7 +38,7 @@ class FMGroupViewController: UIViewController {
         
 //        serialDemo.moneyTest()
         
-        synchronizeDemo.moneyTest()
+//        synchronizeDemo.moneyTest()
         
         conditionDemo.otherTest()
         
