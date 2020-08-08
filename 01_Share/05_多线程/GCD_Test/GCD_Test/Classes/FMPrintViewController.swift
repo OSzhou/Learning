@@ -35,15 +35,20 @@ class FMPrintViewController: UIViewController {
         self.test2()
     }
     //(label: "concurrentQueue", attributes: .concurrent)
-    //            RunLoop.current.add(Port(), forMode: .default)
-    //            RunLoop.current.run(mode: .default, before: .distantFuture)
+    
     
     func test() {
         let queue = DispatchQueue.global()
-        queue.async { <#code#> }
+        
         queue.async {
             print(" --- 111 --- ")
+            // 本质是往runloop里添加了个定时器
             self.perform(#selector(self.performAction), with: nil, afterDelay: 0)
+            // 因为上一句已经添加了一个timer，所以这句可以省略
+            //            RunLoop.current.add(Port(), forMode: .default)
+            //            RunLoop.current.run(mode: .default, before: .distantFuture)
+            
+            //self.perform(#selector(self.performAction), with: nil) //<==> self.performAction() // <==> objc_msgSend()// print 111 ` 333 ` 222
             
             print(" --- 333 --- ")
         }
