@@ -34,19 +34,23 @@ class FMPrintViewController: UIViewController {
 //        self.test()
         self.test2()
     }
+    //(label: "concurrentQueue", attributes: .concurrent)
+    //            RunLoop.current.add(Port(), forMode: .default)
+    //            RunLoop.current.run(mode: .default, before: .distantFuture)
     
     func test() {
-        let queue = DispatchQueue.global()//(label: "concurrentQueue", attributes: .concurrent)
+        let queue = DispatchQueue.global()
+        queue.async { <#code#> }
         queue.async {
             print(" --- 111 --- ")
             self.perform(#selector(self.performAction), with: nil, afterDelay: 0)
             
-//            RunLoop.current.add(Port(), forMode: .default)
-            RunLoop.current.run(mode: .default, before: .distantFuture)
-            
+            print(" --- 333 --- ")
         }
     }
 
+    
+    
     @objc func performAction() {
         print(" --- 222 --- ")
     }

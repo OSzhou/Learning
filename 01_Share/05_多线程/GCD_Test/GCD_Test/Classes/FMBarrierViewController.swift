@@ -12,10 +12,42 @@ class FMBarrierViewController: UIViewController {
 
     let queue = DispatchQueue(label: "concurrentQueue", attributes: .concurrent)
     
+    var lock = pthread_rwlock_t()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .gray
         // Do any additional setup after loading the view.
+    }
+    
+    func configPthread_rwlock() {
+        pthread_rwlock_init(&lock, nil)
+        for _ in 0..<10 {
+            queue.async {
+                self.read3()
+            }
+            queue.async {
+                self.write3()
+            }
+        }
+    }
+    
+    func read3() {
+        pthread_rwlock_rdlock(&lock)
+        
+        Thread.sleep(forTimeInterval: 1)
+        print(" --- read3 ---")
+        
+        pthread_rwlock_unlock(&lock)
+    }
+    
+    func write3() {
+        pthread_rwlock_wrlock(&lock)
+        
+        Thread.sleep(forTimeInterval: 1)
+        print(" --- write3 ---")
+        
+        pthread_rwlock_unlock(&lock)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -23,6 +55,8 @@ class FMBarrierViewController: UIViewController {
         test2()
     }
 
+    
+    
     func test2() {
         for _ in 0..<10 {
             
@@ -76,5 +110,9 @@ class FMBarrierViewController: UIViewController {
     func write() {
         Thread.sleep(forTimeInterval: 3)
         print(" --- write --- ")
+    }
+    
+    deinit {
+        pthread_rwlock_destroy(&lock)
     }
 }
