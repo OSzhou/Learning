@@ -9,7 +9,8 @@
 import UIKit
 
 class FMBarrierViewController: UIViewController {
-
+    // 因为上一句已经添加了一个timer，所以这句可以省略
+    // 如果传入的是一个串行或是一个全局的并发队列，那这个函数便等同于dispatch_async函数的效果
     let queue = DispatchQueue(label: "concurrentQueue", attributes: .concurrent)
     
     var lock = pthread_rwlock_t()
