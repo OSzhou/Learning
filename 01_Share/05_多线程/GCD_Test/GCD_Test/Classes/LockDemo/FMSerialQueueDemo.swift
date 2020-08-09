@@ -16,6 +16,12 @@ class FMSerialQueueDemo: FMBaseDemo {
         moneyQueue.sync {
             super.__saveMoney()
         }
+        
+        let queue = DispatchQueue(label: "serialQueue")
+        queue.sync {
+            // 任务
+        }
+        
     }
     
     override func __drawMoney() {

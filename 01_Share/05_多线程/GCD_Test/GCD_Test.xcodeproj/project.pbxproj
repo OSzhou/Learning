@@ -26,6 +26,7 @@
 		9722C8DA24DD6D9900562F40 /* FMSerialQueueDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8D924DD6D9900562F40 /* FMSerialQueueDemo.swift */; };
 		9722C8DC24DD6E8E00562F40 /* FMSynchronizeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8DB24DD6E8E00562F40 /* FMSynchronizeDemo.swift */; };
 		9722C8DE24DD711B00562F40 /* FMConditionLockDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9722C8DD24DD711B00562F40 /* FMConditionLockDemo.swift */; };
+		FA1EB9F824DFB937007AF278 /* FMConditionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1EB9F724DFB937007AF278 /* FMConditionDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		9722C8D924DD6D9900562F40 /* FMSerialQueueDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSerialQueueDemo.swift; sourceTree = "<group>"; };
 		9722C8DB24DD6E8E00562F40 /* FMSynchronizeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMSynchronizeDemo.swift; sourceTree = "<group>"; };
 		9722C8DD24DD711B00562F40 /* FMConditionLockDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMConditionLockDemo.swift; sourceTree = "<group>"; };
+		FA1EB9F724DFB937007AF278 /* FMConditionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMConditionDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				9722C8D724DD4CE000562F40 /* FMMutexDemo.swift */,
 				9722C8D924DD6D9900562F40 /* FMSerialQueueDemo.swift */,
 				9722C8DB24DD6E8E00562F40 /* FMSynchronizeDemo.swift */,
+				FA1EB9F724DFB937007AF278 /* FMConditionDemo.swift */,
 				9722C8DD24DD711B00562F40 /* FMConditionLockDemo.swift */,
 			);
 			path = LockDemo;
@@ -322,6 +325,7 @@
 				9722C8C124DBEE0400562F40 /* FMGroupViewController.swift in Sources */,
 				9722C8DE24DD711B00562F40 /* FMConditionLockDemo.swift in Sources */,
 				9722C8BB24DAAED000562F40 /* FMRootViewController.swift in Sources */,
+				FA1EB9F824DFB937007AF278 /* FMConditionDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

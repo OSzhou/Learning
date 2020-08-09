@@ -17,7 +17,8 @@ class FMGroupViewController: UIViewController {
     var mutexDemo = FMMutexDemo()
     var serialDemo = FMSerialQueueDemo()
     var synchronizeDemo = FMSynchronizeDemo()
-    var conditionDemo = FMConditionLockDemo()
+    var conditionDemo = FMConditionDemo()
+    var conditionLockDemo = FMConditionLockDemo()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,7 @@ class FMGroupViewController: UIViewController {
 //        synchronizeDemo.moneyTest()
         
         conditionDemo.otherTest()
+//        conditionLockDemo.otherTest()
         
         return
         

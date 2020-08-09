@@ -19,10 +19,13 @@ class FMConditionLockDemo: FMBaseDemo {
     }
     
     @objc func __one() {
+        // 忽视条件加锁
         conditionLock.lock()
-        
+        // 根据条件加锁
+//        conditionLock.lock(whenCondition: 1)
         print(" --- one ---")
         Thread.sleep(forTimeInterval: 2)
+        // 解锁后并把condition置为2
         conditionLock.unlock(withCondition: 2)
     }
     

@@ -112,8 +112,9 @@ class FMMutexDemo: FMBaseDemo {
         
         print(" --- remove - begin --- ")
         if data.isEmpty {
-            // 等待
+            // 等待 睡眠后会放开这把锁
             pthread_cond_wait(&cond, &mutex)
+            //满足条件唤醒后重新加锁
         }
         
         if !data.isEmpty {
@@ -133,9 +134,9 @@ class FMMutexDemo: FMBaseDemo {
          data.append("Test")
          print(" --- 添加了元素--- ")
         
-         // 信号
+         // 信号 （唤醒一个）
              pthread_cond_signal(&cond);
-             // 广播
+             // 广播 （唤醒所有等待线程）
          //    pthread_cond_broadcast(&cond);
          
          pthread_mutex_unlock(&mutex)
