@@ -29,8 +29,8 @@ class FMRootViewController: UIViewController {
         view.addSubview(cameraButton)
         view.addSubview(albumButton)
         view.addSubview(otherButton)
-        view.addSubview(popButton)
-        view.addSubview(reminderButton)
+//        view.addSubview(popButton)
+//        view.addSubview(reminderButton)
         
     }
 

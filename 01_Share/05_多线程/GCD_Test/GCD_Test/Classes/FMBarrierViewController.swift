@@ -52,8 +52,8 @@ class FMBarrierViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        test()
-        test2()
+        test()
+//        test2()
     }
 
     

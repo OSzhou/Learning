@@ -44,6 +44,9 @@ class FMGroupViewController: UIViewController {
         conditionDemo.otherTest()
 //        conditionLockDemo.otherTest()
         
+        
+//        unfairLockDemo.otherTest()
+        
         return
         
         let group = DispatchGroup()
@@ -55,7 +58,7 @@ class FMGroupViewController: UIViewController {
             }
             mqueue.async(group: group, execute: item)
         }
-        
+
         for _ in 0..<5 {
             let item = DispatchWorkItem {
                 print("task 222 --- \(Thread.current)")
@@ -75,23 +78,23 @@ class FMGroupViewController: UIViewController {
         /// 任务5 和 任务3实在同一线程执行的吗
         /// 任务5 和 任务3所在线程是新创建的吗
         
-//        group.notify(queue: mqueue) {
-//            print("555 - out --- \(Thread.current)")
-//            mqueue.sync {
-//                for _ in 0..<5 {
-//                    print("task 555 --- \(Thread.current)")
-//                }
-//            }
-//        }
-//
-//        group.notify(queue: mqueue) {
-//            print("333 - out --- \(Thread.current)")
-//            mqueue.sync {
-//                for _ in 0..<5 {
-//                    print("task 333 --- \(Thread.current)")
-//                }
-//            }
-//        }
+        group.notify(queue: mqueue) {
+            print("555 - out --- \(Thread.current)")
+            mqueue.sync {
+                for _ in 0..<5 {
+                    print("task 555 --- \(Thread.current)")
+                }
+            }
+        }
+
+        group.notify(queue: mqueue) {
+            print("333 - out --- \(Thread.current)")
+            mqueue.sync {
+                for _ in 0..<5 {
+                    print("task 333 --- \(Thread.current)")
+                }
+            }
+        }
         
 //        group.notify(queue: queue) {
 //            print("out --- \(Thread.current)")

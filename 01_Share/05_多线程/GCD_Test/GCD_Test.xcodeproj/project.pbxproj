@@ -167,8 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				9722C8D024DD2A0000562F40 /* FMBaseDemo.swift */,
-				9722C8CD24DD2A0000562F40 /* FMSemaphoreDemo.swift */,
 				9722C8CE24DD2A0000562F40 /* FMOSSpinLockDemo.swift */,
+				9722C8CD24DD2A0000562F40 /* FMSemaphoreDemo.swift */,
 				9722C8CF24DD2A0000562F40 /* FMLockDemo.swift */,
 				9722C8D524DD356200562F40 /* FMOSUnfairLockDemo.swift */,
 				9722C8D724DD4CE000562F40 /* FMMutexDemo.swift */,

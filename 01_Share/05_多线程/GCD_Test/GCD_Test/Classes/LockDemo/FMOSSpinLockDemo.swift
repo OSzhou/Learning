@@ -15,6 +15,7 @@ class FMOSSpinLockDemo: FMBaseDemo {
     let ticketLock = UnsafeMutablePointer<OSSpinLock>.allocate(capacity: 0)
     
     override func __saveMoney() {
+//        let lock = UnsafeMutablePointer<OSSpinLock>.allocate(capacity: 0)
         OSSpinLockLock(moneyLock)
         super.__saveMoney()
         OSSpinLockUnlock(moneyLock)

@@ -64,8 +64,8 @@ class FMPrintViewController: UIViewController {
         let thread = Thread {
             print("\(#function) --- 111 ---")
             
-            RunLoop.current.add(Port(), forMode: .default)
-            RunLoop.current.run(mode: .default, before: .distantFuture)
+//            RunLoop.current.add(Port(), forMode: .default)
+//            RunLoop.current.run(mode: .default, before: .distantFuture)
         }
         thread.start()
         self.perform(#selector(perform2Action), on: thread, with: nil, waitUntilDone: true)
