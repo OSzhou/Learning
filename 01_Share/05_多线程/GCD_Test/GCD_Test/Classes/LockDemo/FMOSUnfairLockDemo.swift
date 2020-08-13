@@ -16,8 +16,7 @@ class FMOSUnfairLockDemo: FMBaseDemo {
     
     override func otherTest() {
         
-//        Thread(target: self, selector: #selector(__add), object: nil).start()
-//        Thread(target: self, selector: #selector(__remove), object: nil).start()
+        // 一个线程枷锁另一个线程解锁（是可以的）
         let thread = Thread {
             RunLoop.current.add(Port(), forMode: .default)
             RunLoop.current.run(mode: .default, before: .distantFuture)
